@@ -1,0 +1,240 @@
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .certificates-grid {
+    width: 100%;
+  }
+
+  .certificate-pic {
+    width: 90%;
+  }
+}
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  #about .section-container {
+    gap: 1.5rem;
+  }
+  #about .details-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about .section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .about-details-container {
+    width: 100%;
+  }
+  #about .details-container .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Responsive for tablets and mobile */
+@media screen and (max-width: 1024px) {
+  .projects-container {
+    gap: 1.5rem;
+  }
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 90%;
+  }
+}
+
+/* موبایل: عرض کمتر از 768px */
+@media (max-width: 768px) {
+  
+  /* سکشن‌ها کل صفحه گوشی رو پر کنن */
+  section {
+    margin: 0 1rem;   
+    padding: 2rem 1rem;
+  }
+
+  /* متن‌ها کوچیک‌تر و قابل خواندن */
+  .title {
+    font-size: 1.8rem;
+  }
+  .section__text__p2,
+  .project-description,
+  #about .text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;   /* خواناتر شدن متن */
+  }
+
+  /* Skills → تمام عرض صفحه */
+  .skills-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .skill-category {
+    width: 100%;
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+  .skills-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .skill-item {
+    flex: 1 1 30%;
+  }
+
+  /* Projects → یکی یکی زیر هم */
+  .about-containers, 
+  .projects-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .details-container,
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .project-description {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  /* About section → متن و عکس زیر هم */
+  #about .section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #about .details-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #about .text-container {
+    text-align: justify;
+    padding: 1rem;
+  }
+
+  /* دکمه‌ها تمام عرض */
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* متن‌های توضیحی (Projects, About, Skills و ...) */
+  .project-description,
+  #about .text-container p,
+  .section__text__p2 {
+    text-align: justify;       /* تراز دو طرف */
+    word-spacing: 0.05em;      /* فاصلهٔ طبیعی بین کلمات */
+    letter-spacing: 0.2px;     /* کمی فاصله بین حروف برای خوانایی */
+    line-height: 1.7;          /* فاصله خطی بیشتر برای موبایل */
+    hyphens: auto;             /* در صورت نیاز کلمات رو بشکنه */
+    overflow-wrap: break-word; /* جلوگیری از کشیده شدن متن */
+  }
+}
+
+@media (max-width: 420px) {
+  /* کارت پروژه را کمی پهن‌تر و padding مناسب بده */
+  .project-card {
+    width: 96%;
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  .project-description {
+    text-align: left !important;
+    line-height: 1.6;
+    word-spacing: normal;       /* بازنشانی هر تغییر ناخواسته */
+    letter-spacing: 0.1px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;              /* اگر مرورگر پشتیبانی کند، کلمات را به‌صورت صحیح شکست می‌دهد */
+    overflow-wrap: anywhere;    /* جلوگیری از فشار آوردن به فاصله‌ها */
+    word-break: break-word;
+    text-justify: inter-word;   /* مرورگرهایی که پشتیبانی می‌کنند کمک می‌کند */
+    text-align-last: left;      /* خط آخر را چپ چین کند (رفع ظاهری فاصله خط آخر) */
+  }
+}
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+  .project-card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .project-description {
+   
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    word-spacing: 0.02em; 
+  }
+}
+
+
+

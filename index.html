@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Fatemeh Tahery</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  </nav>
+
+ 
+  <nav id="hamburger-nav">
+    <div class="logo">Fatemeh Tahery</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <section id="home">
+    <div class="section__pic-container">
+      <img src="./assets/profile.jpg" alt="Fatemeh Tahery home picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Fatemeh Tahery</h1>
+      <p class="section__text__p2">Computer Science Student at Amirkabir University</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        <button class="btn btn-color-1" onclick="location.href='#projects'">View Projects</button>
+      </div>
+      
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/fatemeh-yasamin-tahery-008779355" target="_blank">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+        </a>
+        <a href="https://github.com/yasamin8331" target="_blank">
+          <img src="./assets/github.png" alt="GitHub" class="icon">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="About picture" class="about-pic">
+      </div>
+      <div class="about-details-container">
+          <div class="details-container">
+            <img src="./assets/education.jpg" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>Bachelor in Computer Science at Amirkabir University of Technology(TehranPolytechnic)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+          Hi , I’m Yasamin 👋  
+          I am a Computer Science student at Amirkabir University of Technology with a strong passion for cybersecurity, bug bounty hunting, and ethical hacking.  
+          I enjoy solving real-world problems through programming, web development, and penetration testing.  
+
+          My journey in tech started with a curiosity for how systems and networks work, which soon evolved into an interest in security. Along the way, I’ve worked on projects involving AI, data analysis, and game development, always seeking to learn new technologies and improve my skills.  
+
+          Currently, I’m focusing on areas like web security, vulnerability analysis, and practical penetration testing.  
+          I believe in continuous learning, sharing knowledge, and using technology responsibly to make the digital world a safer place. 🚀
+          I love building projects and learning new technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+
+    <!-- Programming Skills -->
+    <div class="skill-category">
+      <h3>Programming</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="./assets/c.png" alt="C" class="skill-icon">
+          <p>C</p>
+        </div>
+        <div class="skill-item">
+          <img src="./assets/cpp.png" alt="C++" class="skill-icon">
+          <p>C++</p>
+        </div>
+        <div class="skill-item">
+          <img src="./assets/python.png" alt="Python" class="skill-icon">
+          <p>Python</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="skill-category">
+      <h3>Certificates</h3>
+      <div class="certificates-grid">
+        <div class="certificate-item">
+          <p>CompTIA Network+</p>
+        </div>
+        <div class="certificate-item">
+          <p>CompTIA Security+</p>
+        </div>
+        <div class="certificate-item">
+          <p>CEH (Certified Ethical Hacker)</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects:</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.webp" alt="Project 1" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Genetic-Algorithm-Clustering</h2>
+          <p class="project-description">
+            Conducted a comparative analysis of Genetic Algorithm vs K-Means clustering. 
+            Implemented outlier detection (Z-score, IQR) and applied PCA for dimensionality reduction 
+            and visualization of results.
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('https://github.com/yasamin8331/genetic-algorithm-clustering.git')">Github</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.jpg" alt="Project 2" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Tom-Jerry</h2>
+          <p class="project-description">
+            Developed an AI-based Tom & Jerry game using PyGame. 
+            Implemented intelligent movement and decision-making algorithms, 
+            with multiple AI vs AI modes for behavior analysis and testing.
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('https://github.com/yasamin8331/Tom-Jerry.git')">Github</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.jpg" alt="Project 3" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Othello-Game</h2>
+          <p class="project-description">
+            Implemented Othello AI with Minimax, Expectimax, and MCTS algorithms. 
+            Built a PyGame GUI with a weighted board evaluation system, 
+            supporting multiple AI vs AI game modes for algorithm comparison.
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('https://github.com/yasamin8331/Othello-Game.git')">Github</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Skyscraper</h2>
+           <p class="project-description">
+              Designed a constraint satisfaction problem solver for Skyscraper puzzles. 
+              Implemented backtracking with MRV, LCV, and MAC optimizations, 
+              along with a Tkinter GUI for real-time puzzle visualization.
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('https://github.com/yasamin8331/Skyscraper.git')">Github</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+        <p><a href="mailto:fatemeh@example.com">yasi.tahery83318331@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/fatemeh-yasamin-tahery-008779355" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://github.com/yasamin8331" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p>© 2025 Fatemeh Tahery. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
